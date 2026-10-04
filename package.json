@@ -1,0 +1,21 @@
+{
+  "name": "desafio-typescript-freelancer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "dev": "tsx src/index.ts",
+  "build": "tsc",
+  "test": "vitest run",
+  "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
