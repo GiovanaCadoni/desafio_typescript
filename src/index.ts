@@ -1,5 +1,6 @@
 import { calculatePayment } from "./payment";
 import type { Payment, Task } from "./types";
+import { groupBy } from "./groupBy";
 
 const tasks: Task[] = [
   {
@@ -41,3 +42,7 @@ console.log(
   "Pagamento por hora:",
   calculatePayment(tasks, paymentPerHour),
 );
+
+const tasksByStatus = groupBy(tasks, "status");
+
+console.log("Tasks por status:", tasksByStatus);
